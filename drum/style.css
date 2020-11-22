@@ -1,0 +1,128 @@
+*{box-sizing: border-box;}
+body{
+    background-image: url('./music-notes-1622424_1920.jpg');
+    background-size: cover;
+}
+
+body h1{
+    text-align: center;
+    color: #03045e;
+    font-family: 'Nerko One', cursive;
+    font-size: 3rem;
+    background-color: white;
+}
+.drum_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+}
+.button_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  
+}
+.button_container button{
+    font-family: 'Nerko One', cursive;
+    font-size: 2rem;
+    background-color: white;
+    border: 3px solid #03045e;
+    color:  #03045e;
+    border-radius: 10px;
+}
+.drum_controls{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    width: 70%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
+
+}
+.drum_controls p{
+    font-family: 'Nerko One', cursive;
+    font-size: 2rem;  
+    color: #03045e;
+}
+.text{
+    padding: 20px;
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+    font-size: 2rem;
+    color: #03045e;
+}
+#volume_show{
+    padding: 20px;
+    text-align: center; 
+    font-family: 'Nerko One', cursive;
+    font-size: 2rem;
+    color: #03045e;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: #ced4da;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: red;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: white;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px white;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: green;
+  }
+  
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

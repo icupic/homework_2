@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Drum kit</h1>
+    <div class="drum_container">
+     <div class="button_container">
+         <button class="button_drum" id="81">Q</button>
+         <button class="button_drum" id="87">W</button>
+         <button class="button_drum" id="69">E</button>
+         <button class="button_drum" id="65">A</button>
+         <button class="button_drum" id="83">S</button>
+         <button class="button_drum" id="68">D</button>
+         <button class="button_drum" id="90">Z</button>
+         <button class="button_drum" id="88">X</button>
+         <button class="button_drum" id="67">C</button>
+         
+     </div>
+     <div class="drum_controls">
+         <p>Off/On</p>
+        <label class="switch">
+            <input type="checkbox" class="check" >
+            <span class="slider round"></span>
+          </label> 
+      <div class="text"></div>
+      <div id="volume_show"></div>
+      <input id="vol-control" type="range" min="0" max="100" step="1" oninput="thisVolume(this.value)" onchange="thisVolume(this.value)"></input>
+      <p>Bank1/Bank2</p>
+      <label class="switch">
+        <input type="checkbox" class="check_bank" >
+        <span class="slider round"></span>
+     </label>
+      
+     </div>
+    </div>
+
+<audio class="bank_1 Q 81" id="Heater-1" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
+<audio class="bank_1 W 87" id="Heater-2" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>
+<audio class="bank_1 E 69" id="Heater-3" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>
+<audio class="bank_1 A 65" id="Heater-4" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"><audio>
+<audio class="bank_1 S 83" id="Clap" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>
+<audio class="bank_1 D 68" id="Open-HH" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>
+<audio class="bank_1 Z 90" id="Kick-n'-Hat"src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>
+<audio class="bank_1 X 88" id="Kick" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>
+<audio class="bank_1 C 67" id="Closed-HH" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"><audio>
+
+<audio class="bank_2 Q 81" id="Chord-1" src="https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3"></audio>
+<audio class="bank_2 W 87" id="Chord-2" src="https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3"></audio>
+<audio class="bank_2 E 69" id="Chord-3" src="https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3"></audio>
+<audio class="bank_2 A 65" id="Shaker" src="https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3"></audio>
+<audio class="bank_2 S 83" id="Open-HH" src="https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3"><audio>
+<audio class="bank_2 D 68" id="Closed-HH" src="https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3"></audio>
+<audio class="bank_2 Z 90" id="Punchy-Kick" src="https://freewavesamples.com/files/Closed-Hi-Hat-1.wav"></audio>
+<audio class="bank_2 X 88" id="Side-Stick" src="https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3"><audio>
+<audio class="bank_2 C 67" id="Snare" src="https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3"></audio>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url('./square-2721757.png');
+    background-size: cover;
+}
+
+.square-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.square{
+ position: relative;
+ background-color: #023e8a;
+ padding: 50px;
+ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ margin-bottom: 1%;
+ margin-left: 1%;
+}
+#close{
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 50%;
+outline: none;
+color: red;
+border: 1px solid #fcbf49;
+}
+#plus{
+    align-self: center;
+    font-size: 2rem;
+    margin-bottom:5%;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    outline: none;
+    color:  #48cae4;
+    background-color: #023e8a;
+}
+.para{
+    font-size: 2rem;
+    font-family: 'Texturina', serif;
+    color: #48cae4;
+}

@@ -1,0 +1,81 @@
+*{box-sizing: border-box;}
+body h1{
+    font-size: 3rem;
+    text-align: center;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.clock-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.type_of_clock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 5%;
+    
+}
+.type_of_clock button{
+    font-size: 1rem;
+    padding: 10px;
+    margin-left: 5px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    border: 1px solid white;
+}
+.display_clock{
+    padding:10%;
+    background-color: #f4f4f4;
+    font-size: 3rem;
+    align-self: center;
+    width: fit-content;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    font-family: 'Indie Flower', cursive;
+}
+.clock_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 5%;
+}
+.clock_buttons button{
+    font-size: 1rem;
+     padding: 10px;
+     margin-left: 10px;
+     font-family: 'Indie Flower', cursive;
+     font-weight: bold;
+     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+     border: 1px solid white;
+}
+.start:hover{
+    background-color: #2a9d8f;
+    color: white;
+}
+.stop:hover{
+    background-color: #fcbf49;
+    color: white;
+}
+.reset:hover{
+    background-color: #d62828;
+    color: white;
+}
+.pomodoro:hover{
+    background-color: #5390d9;
+    color: white;
+}
+.short_break:hover{
+    background-color: #4ea8de;
+    color: white;
+}
+.long_break:hover{
+    background-color: #48bfe3;
+    color: white;
+}

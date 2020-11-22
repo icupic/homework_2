@@ -1,0 +1,65 @@
+// const button=document.getElementById('button').addEventListener('click',buttonClick);
+
+// function buttonClick(e){
+//     //console.log('Button clicked');
+//     // document.getElementById('header-title').textContent ='changed';
+//     // document.querySelector('#main').style.backgroundColor ='#f4f4f4';
+//     //console.log(e);
+//     // console.log(e.target); //element koji je kliknut
+//     // console.log(e.target.id);
+//     // console.log(e.target.className);
+//     // console.log(e.target.classList);
+ // const output=document.getElementById('output');
+//     // output.innerHTML='<h3>'+e.target.id+'</h3>';
+
+//     // console.log(e.type);
+
+// //     console.log(e.clientX);  //client racuna od prozora
+// //     console.log(e.clientY);
+
+//     //console.log(e.offsetX);   //racuna od elementa
+//     //console.log(e.offsetY);
+
+//     // console.log(e.altKey);
+//     // console.log(e.ctrlKey);
+//     // console.log(e.shiftKey);
+// }
+
+const button=document.getElementById('button');
+//button.addEventListener('click',runEvent);
+//button.addEventListener('dblclick',runEvent);
+// button.addEventListener('mousedown',runEvent);
+//button.addEventListener('mouseup',runEvent);
+
+// button.addEventListener('mouseenter',runEvent);
+// button.addEventListener('mouseleave',runEvent);
+
+// button.addEventListener('mouseover',runEvent);
+// button.addEventListener('mouseout',runEvent);
+
+//button.addEventListener('mousemove',runEvent);
+const itemInput= document.querySelector('input[type="text"]');
+const form= document.querySelector('form');
+// itemInput.addEventListener('keydown', runEvent);
+// itemInput.addEventListener('keyup', runEvent);
+// itemInput.addEventListener('keypress', runEvent);
+// itemInput.addEventListener('focus', runEvent);
+// itemInput.addEventListener('blur', runEvent);
+
+ //itemInput.addEventListener('input', runEvent);
+
+//itemInput.addEventListener('cut', runEvent);
+//itemInput.addEventListener('paste', runEvent);
+form.addEventListener('submit',runEvent);
+
+
+function runEvent(e){
+    console.log('Event type: '+ e.type);
+    e.preventDefault();
+
+    // console.log(e.target.value);
+    // document.getElementById('output').innerHTML='<h3>'+e.target.value+'</h3>';
+    // output.innerHTML ='<h3>MouseX: ' +e.offsetX+ '</h3><h3> MouseY: ' +e.offsetY+ '</h3>';
+    //document.body.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",30)";
+
+}
